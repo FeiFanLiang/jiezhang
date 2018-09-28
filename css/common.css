@@ -1,0 +1,72 @@
+/* 重置样式 */
+html {overflow-y:scroll;-webkit-overflow-scrolling: touch;}
+body {margin:0; padding:0; font:12px/1.5 \5b8b\4f53,Arial,sans-serif;/*background:#ffffff;*/}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;}
+table,td,tr,th{font-size:12px;}
+ol,ul {list-style:none;}
+li{list-style-type:none;}
+img{vertical-align:top;border:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
+address,cite,code,em,th,i{font-weight:normal; font-style:normal;}
+.hx a,.hx em,.fB{font-weight:bold;}
+.clearfix{*zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+a {color:#252525; text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {color:#ba2636;text-decoration:none;}
+a:active {color:#ba2636;text-decoration: none;}
+input{
+    display: block;
+    outline: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: 0;
+    margin-bottom: 30px;
+}
+@font-face {
+	font-family: 'iconfont';
+	src:url('./fonts/icomoon.eot'),
+	url('./fonts/icomoon.woff') format('woff'),
+	url('./fonts/icomoon.ttf') format('truetype'),
+	url('./fonts/icomoon.svg') format('svg');
+}
+/* 头部固定导航 */
+.nav-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 45px;
+	padding: 0 6%;
+	color: #50321f;
+	background-color: #fff;
+}
+.nav-container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+.icon{
+	font-family: 'iconfont';
+	display: block;
+}
+.nav-left {
+	display: flex;
+	align-items: center;
+	font-size: 10px;
+}
+.nav-pull-back{
+	width: 15px;
+	height: 14px;
+	font-size: 28px;
+	line-height: 14px;
+}
+.nav-pull-back::after{
+	content: '\e90b';
+}
+.nav-set{
+	height: 15px;
+	width: 15px;
+}
