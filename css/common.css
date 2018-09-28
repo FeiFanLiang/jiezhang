@@ -18,11 +18,15 @@ a:active {color:#ba2636;text-decoration: none;}
 input{
     display: block;
     outline: none;
+    box-sizing: border-box;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
     border: 0;
-    margin-bottom: 30px;
+    width: 100%;
+}
+a {
+	display: block;
 }
 @font-face {
 	font-family: 'iconfont';
@@ -55,18 +59,51 @@ input{
 .nav-left {
 	display: flex;
 	align-items: center;
-	font-size: 10px;
+	font-size: 14px;
 }
 .nav-pull-back{
-	width: 15px;
-	height: 14px;
-	font-size: 28px;
+	width: 18px;
+	/*height: 14px;*/
+	font-size: 24px;
 	line-height: 14px;
 }
 .nav-pull-back::after{
 	content: '\e90b';
 }
-.nav-set{
-	height: 15px;
-	width: 15px;
+
+.nav-center{
+	font-size: 20px;
+	font-weight: 800;
+}
+.nav-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 46px;
+}
+.nav-set::after{
+	content: '\e90a';
+	font-size: 23px;
+}
+.input-container{
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0px 1px 7px #969696;
+}
+.form-submit-btn{
+	margin-bottom: 80px;
+}
+.submit-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 60px;
+	border-radius: 4px;
+	background-color: #50321F;
+}
+.submit-btn a{
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
 }

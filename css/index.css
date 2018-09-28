@@ -1,3 +1,73 @@
 body{
 	background-color: #edeae8;
 }
+/*内容样式*/
+section{
+	padding-top: 45px;
+}
+.main-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 120px 21px 0;
+}
+.user-img{
+	margin-bottom: 54px;
+}
+.user-login{
+	display: block;
+	height:100px ;
+	width: 100px;
+	border-radius: 50%;
+	background-color: #50321F;
+}
+.form-input-group{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 34px;
+	color: #e5e5e5;
+	margin-bottom: 70px;
+}
+
+.form-input-group input{
+	height: 56px;
+	line-height: 28px;
+	font-size: 18px;
+	padding-left: 50px;
+}
+.input-item-container{
+	position: relative;
+}
+.input-item-container:nth-child(1){
+	border-bottom: 1px solid #e5e5e5;
+}
+.input-item-container .icon{
+	position: absolute;
+	left: 5%;
+	top: 15px;
+	font-size: 18px;
+}
+.user-icon::after{
+	content: '\e901';
+}
+.password-icon::after{
+	content: '\e900';
+}
+/*.form-submit-btn{
+	margin-bottom: 80px;
+}
+.submit-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 60px;
+	border-radius: 4px;
+	background-color: #50321F;
+}
+.submit-btn a{
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+}*/

@@ -1,0 +1,56 @@
+/*系统设置页面*/
+body{
+	background-color: #edeae8;
+}
+
+/*内容部分*/
+section{
+	padding-top: 45px;
+}
+.main-container{
+	padding:100px 23px 0;
+	color: #d7d7d7;
+	 
+}
+.main-container input {
+	height: 60px;
+	padding-left: 70px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #b3b3b3;
+	border-radius: 4px;
+}
+.solo-input {
+	position: relative;
+	margin-bottom: 19px;
+	
+}
+
+.solo-input:last-child {
+	margin-bottom: 0px;
+}
+
+.solo-input .icon{
+	position: absolute;
+	top: 15px;
+	left: 9%;
+	font-size: 20px;
+	
+}
+.position-icon::after{
+	content: '\e908';
+}
+.home-icon::after{
+	content: '\e904';
+}
+.user-icon::after{
+	content: '\e901';
+}
+.password-icon::after{
+	content: '\e900';
+}
+.form-submit-btn{
+	display: flex;
+	margin-top: 90px;
+	justify-content: center;
+}

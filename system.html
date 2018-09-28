@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>系统设置</title>
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/system.css">
+	</head>
+	<body>
+		<header class="nav-fixed">
+			<div class="nav-container">
+				<div class="nav-left">
+					<i class="nav-pull-back icon"></i>
+					<span>返回</span>
+				</div>
+				<div class="nav-center">
+					系统设置
+				</div>
+				<div class="nav-right">
+					<!--<i class="nav-set icon"></i>-->
+				</div>
+			</div>
+		</header>
+	<section>
+		<div class="main-container">
+			<div class="input-container solo-input">
+				<div class="input-item-container">
+					<input type="number" />
+					<i class="icon position-icon"></i>
+				</div>
+			</div>
+			<div class="input-container solo-input">
+				<div class="input-item-container">
+					<input type="text" />
+					<i class="icon home-icon"></i>
+				</div>
+			</div>
+			<div class="input-container solo-input">
+				<div class="input-item-container">
+					<input type="text" />
+					<i class="icon user-icon"></i>
+				</div>
+			</div>
+			<div class="input-container solo-input">
+				<div class="input-item-container">
+					<input type="password" />
+					<i class="icon password-icon"></i>
+				</div>
+			</div>
+		</div>
+		<div class="form-submit-btn">
+				<div class="submit-btn">
+				<a href="./system.html">保存</a>	
+				</div>
+		</div>
+	</section>
+	</body>
+	<script type="text/javascript">
+		var back = document.querySelector('.nav-left')
+		back.onclick = function(){
+			window.location.href = 'index.html'
+		}
+	</script>
+</html>
