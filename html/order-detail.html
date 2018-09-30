@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>点餐详情</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/order-detail.css">
+		<script type="text/javascript" src="../js/fastclick.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+	<body>
+		<header class="nav-fixed">
+			<div class="nav-container">
+				<div class="nav-left">
+					<i class="nav-pull-back icon"></i>
+					<span>返回</span>
+				</div>
+				<div class="nav-center">
+					点餐详情页
+				</div>
+				<div class="nav-right">
+					
+				</div>
+			</div>
+		</header>
+		<section class="main-container">
+			<div class="order-input-container">
+				<div class="order-list-container order-num" id="own-number">
+					手牌号
+				</div>
+				<div class="order-list-container order-num table-num">
+					101
+				</div>
+			</div>
+			<div class="order-list-container list-wrap">
+				
+					<ul>
+						<li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<div class="unit-edit"><i class="icon edit-icon"></i></div>
+								</div>
+							</div>
+						</li>
+						<li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<div class="unit-edit"><i class="icon edit-icon"></i></div>
+								</div>
+							</div>
+						</li>
+						<li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<div class="unit-edit"><i class="icon edit-icon"></i></div>
+								</div>
+							</div>
+						</li>
+						<li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<div class="unit-edit"><i class="icon edit-icon"></i></div>
+								</div>
+							</div>
+						</li>
+						<li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<div class="unit-edit"><i class="icon edit-icon"></i></div>
+								</div>
+							</div>
+						</li>
+						<li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right">
+									<div class="order-amount">X <span class="unit-amount">4</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<div class="unit-edit"><i class="icon edit-icon"></i></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				<div class="order-total">
+					<div class="total-price">
+						合计：¥<span>110</span>
+					</div>
+				</div>
+				
+			</div>
+			
+		</section>
+		<footer class="nav-fixed-bottom cart-nav">
+			<div class="bottom-left">
+				<div class="cart-container">
+					<i class="icon cart-icon"></i>
+					<div class="cart-detail">
+						共<span class="cart-num">3</span>件商品
+					</div>
+				</div>
+			</div>
+			<div class="bottom-right">
+				<a href="./order-confirm.html">
+					提交订单
+				</a>
+			</div>
+		</footer>
+		<div class="edit-dialog">
+			<div class="edit-container">
+				<div class="edit-name">树莓</div>
+				<div class="edit-amount">
+					当前数量：<span class="edit-num">2</span>
+				</div>
+				<div class="edit-input">
+					<input id="edit_input" type="text" />
+				</div>
+				<div class="edit-btn-container">
+					<div class="edit-cancel" id="edit_cancel">
+					取消
+					</div>
+					<div class="edit-submit" id="edit_submit">
+					
+					确定
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layer-content">
+        <div class="form_edit clearfix">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+            <div class="num">7</div>
+            <div class="num">8</div>
+            <div class="num">9</div>
+            <div class="del-key">
+                <i class="del-icon icon"></i>
+            </div>
+            <div class="num">0</div>
+            <div class="submit-key" id="submit_key">确认</div>
+        </div>
+    </div>
+	</body>
+	<script type="text/javascript">
+		$(function (){
+			FastClick.attach(document.body);
+			$('.nav-left').on('click',function(){
+				window.history.back()
+			})
+		 $('#own-number').on('click', function () {
+            $('.layer-content').show();
+            $('#own-number').addClass('inputAnimate')
+            if (isNaN(Number($(this).text()))) {
+                $(this).text('')
+            }
+        })
+
+        $('.form_edit .num').click(function () {
+            var Newvalue = $('#own-number').text() + $(this).text()
+            $('#own-number').text(Newvalue)
+        })
+        $('.del-key').click(function () {
+            var value = $('#own-number').text()
+            $('#own-number').text(value.substring(0, value.length - 1))
+        })
+        function layerHide(){
+        	$('.layer-content').hide()
+            $('#own-number').removeClass('inputAnimate')
+            if ($('#own-number').text() == '') {
+                $('#own-number').text('手牌号')
+            }
+        }
+        $('#submit_key').on('click', function () {
+            layerHide()
+        })
+		$('.item-edit').on('click',function (){
+			$(this).parent('.order-item').addClass('checked').siblings('li').removeClass('checked')
+		});
+		var index;
+		$('.unit-edit').on('click',function (){
+			layerHide()
+			$('.edit-dialog').show()
+			$('body').on('touchmove',function(event){event.preventDefault();});
+			index = $(this).parents('.list-container').index()
+			var oldNum = $(this).siblings('.order-amount').find('.unit-amount').text()
+			$('.edit-num').text(oldNum)
+			
+		})
+		$('#edit_submit').on('click',function (){
+			var num  = $('#edit_input').val()
+			$('#edit_input').val('')
+			var child = $('.order-list-container .list-container')
+			child.eq(index).find('.unit-amount').text(num)
+			$('body').unbind('touchmove')
+			$('.edit-dialog').hide()
+		})
+		$('#edit_cancel').on('click',function (){
+			$('#edit_input').val('')
+			$('body').unbind('touchmove')
+			$('.edit-dialog').hide()
+		})
+		})
+	</script>
+</html>

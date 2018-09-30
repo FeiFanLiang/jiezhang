@@ -24,6 +24,23 @@ input{
     border-radius: 0px;
     border: 0;
     width: 100%;
+    -webkit-appearance: none; 
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    /*color:    #fff;*/
+   line-height: 20px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    /*color:    #fff;*/
+   line-height: 20px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    /*color:    #fff;*/
+   line-height: 20px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    /*color:    #fff;*/
+   line-height: 20px;
 }
 a {
 	display: block;
@@ -35,6 +52,9 @@ a {
 	url('./fonts/icomoon.ttf') format('truetype'),
 	url('./fonts/icomoon.svg') format('svg');
 }
+body{
+	background-color: #edeae8;
+}
 /* 头部固定导航 */
 .nav-fixed {
 	position: fixed;
@@ -45,6 +65,7 @@ a {
 	padding: 0 6%;
 	color: #50321f;
 	background-color: #fff;
+	z-index: 1;
 }
 .nav-container{
 	display: flex;
@@ -60,6 +81,8 @@ a {
 	display: flex;
 	align-items: center;
 	font-size: 14px;
+	width: 48px;
+	font-weight: 600;
 }
 .nav-pull-back{
 	width: 18px;
@@ -106,4 +129,30 @@ a {
 	font-size: 20px;
 	font-weight: 600;
 	color: #fff;
+}
+.order-list-container{
+	background-color: #fff;
+	border-radius: 4px;
+	box-shadow: 0px 2px 5px #a2a0a0;
+	
+}
+.list-container{
+	padding: 0 20px;
+	
+}
+.list-item{
+	position: relative;
+	display: flex;
+	color: #50321F;
+	padding: 20px 0 14px 5px;
+	border-bottom: 1px solid #E5E5E5;
+	
+}
+.nav-fixed-bottom{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 55px;
+	padding: 0 34px;
 }

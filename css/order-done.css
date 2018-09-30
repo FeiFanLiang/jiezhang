@@ -1,0 +1,24 @@
+.back-index{
+	width: 65px;
+}
+.main-container{
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #50321F;
+	padding-top: 200px;
+}
+.done-icon{
+	line-height: 150px;
+	font-size: 150px;
+}
+.done-icon::after{
+	content: '\e905';
+}
+.done-text{
+	font-size: 18px;
+	font-weight: 800;
+	text-align: center;
+}

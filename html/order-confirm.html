@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>订单详情页</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/order-detail.css">
+	</head>
+	<body>
+		<header class="nav-fixed">
+			<div class="nav-container">
+				<div class="nav-left">
+					<i class="nav-pull-back icon"></i>
+					<span>返回</span>
+				</div>
+				<div class="nav-center">
+					订单详情页
+				</div>
+				<div class="nav-right">
+					
+				</div>
+			</div>
+		</header>
+		<section class="main-container">
+			<div class="order-input-container">
+				<div class="order-list-container order-num user-id">
+					1001
+				</div>
+				<div class="order-list-container order-num table-num">
+					101
+				</div>
+			</div>
+			<div class="order-list-container list-wrap">
+				
+					<ul>
+						<li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right confirm-style">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<!--<div class="unit-edit"><i class="icon edit-icon"></i></div>-->
+								</div>
+							</div>
+						</li>
+						<li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right confirm-style">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<!--<div class="unit-edit"><i class="icon edit-icon"></i></div>-->
+								</div>
+							</div>
+						</li><li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right confirm-style">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<!--<div class="unit-edit"><i class="icon edit-icon"></i></div>-->
+								</div>
+							</div>
+						</li><li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right confirm-style">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<!--<div class="unit-edit"><i class="icon edit-icon"></i></div>-->
+								</div>
+							</div>
+						</li><li class="list-container">
+							<div class="list-item">
+								<div class="item-left">
+									<div class="dish-name">
+										树莓
+									</div>
+									<div class="dish-price">
+										¥<span class="unit-price">20</span> /份
+									</div>
+								</div>
+								<div class="item-right confirm-style">
+									<div class="order-amount">X <span class="unit-amount">2</span></div>
+									<div class="unit-total-price">¥<span class="unit-total">40</span></div>
+									<!--<div class="unit-edit"><i class="icon edit-icon"></i></div>-->
+								</div>
+							</div>
+						</li>
+					</ul>
+				<div class="order-total">
+					<div class="total-price">
+						合计：¥<span>110</span>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="confirm-order">
+				<div class="confirm-title">下单时间：</div>
+				<div class="confirm-time">
+					<span class="submit-time">2018-09-15 10:50:52</span>
+				</div>
+			</div>
+		</section>
+		<footer class="nav-fixed-bottom cart-nav">
+			<div class="bottom-left">
+				<div class="cart-container">
+					<i class="icon cart-icon"></i>
+					<div class="cart-detail">
+						共<span class="cart-num">3</span>件商品
+					</div>
+				</div>
+			</div>
+			<div class="bottom-right">
+				<a href="./order-done.html">提交订单</a>
+			</div>
+		</footer>
+		
+	</body>
+	<script type="text/javascript">
+		var btn = document.querySelector('.nav-left')
+		btn.onclick = function(){
+			window.history.back()
+		}
+	</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>确认界面</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/order-done.css"/>
+		
+	</head>
+	<body>
+		<header class="nav-fixed">
+		<div class="nav-container">
+			<div class="nav-left back-index">
+				<i class="nav-pull-back icon"></i>
+				<span>回首页</span>
+			</div>
+			<div class="nav-center">
+				订单完成
+			</div>
+			<div class="nav-right">
+				<!--<i class="nav-set icon"></i>-->
+			</div>
+		</div>
+	</header>
+	<section class="main-container">
+		<div class="done-message">
+			<div class="done-img">
+				<i class="icon done-icon"></i>
+			</div>
+			<div class="done-text">
+				您已结账!
+			</div>
+		</div>
+	</section>
+	</body>
+	<script type="text/javascript">
+		var btn = document.querySelector('.back-index')
+		btn.onclick = function(){
+			window.location.href = './loadingPage.html'
+		}
+	</script>
+</html>

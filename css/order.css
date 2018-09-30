@@ -1,0 +1,64 @@
+/*点单列表页*/
+
+body,html{
+	
+	height: 100%;
+}
+.nav-right{
+	font-size: 14px;
+	font-weight: 600;
+}
+/*内容列表*/
+.main-container{
+	box-sizing: border-box;
+	padding: 60px 24px 24px;
+	height: 100%;
+	
+}
+
+.full-height{
+	height: 100%;
+	overflow: auto;
+	
+}
+.order-list-container::-webkit-scrollbar {
+    display: none;
+    }
+/*.list-container{
+	padding: 0 20px;
+	
+}
+.list-item{
+	position: relative;
+	display: flex;
+	color: #50321F;
+	padding: 20px 0 14px 5px;
+	border-bottom: 1px solid #E5E5E5;
+	
+}*/
+.item-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	font-size: 14px;
+	font-weight: 600;
+	margin-left: 20%;
+}
+.main-num{
+	font-size: 17px;
+	font-weight: 800;
+	color: #000000;
+}
+.menu-container{
+	position: absolute;
+	right: 5px;
+	bottom: 14px;
+	height: 25px;
+	line-height: 25px;
+}
+.menu-icon::after{
+	font-size: 25px;
+	content: '\e906';
+}
+
+

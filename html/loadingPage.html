@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>引导页</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/loadingPage.css">
+		<script type="text/javascript" src="../js/fastclick.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+	</head>
+	<body>
+		<header class="nav-fixed trans-nav">
+		<div class="nav-container">
+			<div class="nav-left">
+				
+			</div>
+			<div class="nav-center">
+				当前登录工号：<span>001</span>
+			</div>
+			<div class="nav-right">
+				
+			</div>
+		</div>
+	</header>
+		<section class="back-img">
+			<div class="center-logo-container">
+				
+			</div>
+		</section>
+		<footer class="nav-fixed-bottom">
+			<div class="nav-container">
+				<div class="nav-left-bottom" id="confirm_btn">点餐确认</div>
+				<div class="nav-center-bottom" id="check_btn">去结账</div>
+				<div class="nav-right-bottom" id="log_out">退出</div>	
+			</div>
+			
+		</footer>
+	</body>
+	
+	<script type="text/javascript">
+		$(function(){
+			FastClick.attach(document.body);
+			$('#confirm_btn').on('click',function (){
+				window.location.href = './order.html'
+			})
+			$('#log_out').on('click',function (){
+				window.location.href = './index.html'
+			})
+			$('#check_btn').on('click',function (){
+				window.location.href = './order-center.html'
+			})
+			$('#log_out').on('click',function(){
+				window.location.href = './index.html'
+			})
+		})
+	</script>
+</html>

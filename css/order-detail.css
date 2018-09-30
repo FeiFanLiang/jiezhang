@@ -1,0 +1,343 @@
+/*点单列表页*/
+body{
+	background-color: #edeae8;
+}
+.nav-right{
+	font-size: 14px;
+	font-weight: 600;
+}
+.main-container{
+	padding: 80px 24px 75px;
+}
+.order-input-container{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.list-wrap{
+	padding-bottom: 25px;
+}
+.order-num{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 47%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: #9b9b9b;
+	font-weight: 500;
+}
+.user-id{
+	color: #50321F;
+}
+.toggle-container{
+	width: 47%;
+	height: 40px;
+	
+}
+.table-num{
+	color: #50321F;
+}
+.list-item .item-left{
+	width: 46%;
+}
+.dish-name{
+	font-size: 17px;
+	color: #000000;
+}
+.dish-price{
+	font-size: 14px;
+}
+.item-right{
+	
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size: 16px;
+	color: #000000;
+}
+.item-right .edit-icon{
+	line-height: 25px;
+	color: #50321F;
+	font-size: 22px;
+	font-weight: 900;
+}
+.edit-icon::after{
+	content: '\e907';
+	
+}
+.confirm-order{
+	padding:10px 20px 0;
+	color: #50321F;
+}
+.order-total{
+	display: flex;
+	justify-content: flex-end;
+	padding: 25px 25px 0 20px;
+}
+.cart-nav{
+	padding: 0;
+	display: flex;
+	background-color: #fff;
+}
+.cart-nav>div{
+	flex: 1;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.cart-container{
+	display: flex;
+	align-items: flex-end;
+}
+.cart-detail{
+	color: #9b9b9b;
+}
+.cart-icon{
+	font-size: 30px;
+	line-height: 30px;
+	color: #50321F;
+	font-weight: 900;
+}
+.cart-icon::before{
+	content: '\e902';
+}
+
+.bottom-right{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 800;
+	background-color: #50321F;
+}
+.bottom-right a{
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 800;
+}
+.pay-for{
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	text-align: center;
+	color: #817E7C;
+	font-size: 18px;
+	font-weight: 800;
+}
+.bottom-left{
+	
+}
+.edit-dialog{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2000;
+	background-color: rgba(0,0,0,.3);
+	
+	
+}
+.edit-container{
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 220px;
+	height: 160px;
+	margin-top: -80px;
+	margin-left: -110px;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0px 1px 7px #969696;
+	border-radius: 10px;
+	background-color: #fff;
+	font-size: 14px;
+	
+}
+.edit-title{
+	padding:20px 0 25px;
+	color: #d0021b;
+	font-weight: 600;
+}
+.edit-name{
+	padding-top: 20px;
+	
+}
+.edit-amount{
+	padding: 5px 0 10px;
+	padding-top: 5px;
+	color: #d0021b;
+}
+.edit-input{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 20px;
+	margin-bottom: 15px;
+}
+.edit-input input{
+	height: 30px;
+	line-height: 14px;
+	border: 1px solid #9b9b9b;
+	font-size: 14px;
+	border-radius: 4px;
+	
+	
+}
+.edit-btn-container{
+	display: flex;
+	flex: 1;
+	width: 100%;
+	border-top: 1px solid #E5E5E5;
+}
+.edit-btn-container>div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	
+}
+.edit-btn-container a{
+	font-weight: 600;
+}
+.edit-cancel a{
+	color: #9B9B9B;
+}
+.edit-submit a {
+	color: #50321F;
+}
+
+.confirm-style{
+	justify-content: space-around;
+}
+.toggle-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.toggle-btn{
+	position: relative;
+	width: 40px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: #FFFFFF;
+	border: 2px solid #ddd;
+}
+.toggle-btn::after{
+	position: absolute;
+	top: 0;
+	left: 45px;
+	font-size: 14px;
+	width: 30px;
+	content: '个人';
+	color: #50321F;
+}
+.toggle-btn.btn-active::after{
+	content: '团队';
+}
+.btn-active{
+	background-color: #50321F;
+}
+
+.toggle-circle{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #4f321e;
+	box-shadow: 0 2px 3px rgba(0,0,0,.4);
+	transform: translate(0px,0px);
+	-moz-transition: -moz-transform 0.3s; /* Firefox 4 */
+	-webkit-transition: -webkit-transform 0.3s; /* Safari 和 Chrome */
+	transition: transform 0.3s;
+	-ms-transform:translate(0px,0px); 	/* IE 9 */
+	-moz-transform:translate(0px,0px); 	/* Firefox */
+	-webkit-transform:translate(0px,0px); /* Safari 和 Chrome */
+	
+
+
+
+}
+.active{
+	background-color: #fff;
+	transform: translate(20px,0px);
+	-ms-transform:translate(20px,0px); 	/* IE 9 */
+	-moz-transform:translate(20px,0px); 	/* Firefox */
+	-webkit-transform:translate(20px,0px); /* Safari 和 Chrome */ 
+}
+
+/* 键盘样式 */
+.layer-content {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    box-shadow: 0px -2px 4px #dedede;
+    z-index: 1000;
+    display: none;
+    
+}
+.form_edit {
+    width: 100%;
+    background: #ececec;
+}
+
+.form_edit> div {
+    margin-bottom: 1px;
+    margin-right: 1px;
+    float: left;
+    width: 33%;
+    height: 50px;
+    text-align: center;
+    color: #333;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #fff;
+    
+}
+.del-key{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.del-icon{
+    width: 40px;
+    height: 24px;
+    background-image: url('../images/del@2x.png');
+    background-size: cover;
+}
+.form_edit .submit-key{
+    color: #50321f;
+}
+.form_edit> div:nth-child(3n) {
+    margin-right: 0;
+}
+.inputAnimate::after {
+content:'';
+display: block;
+width:1px;
+height:16px;
+animation: blink 1s infinite steps(1, start);
+
+}
+
+@keyframes blink {
+0%{
+background-color: white;
+}
+50% {
+background-color: black;
+}
+100% {
+background-color: white;
+}
+}

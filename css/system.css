@@ -1,7 +1,5 @@
 /*系统设置页面*/
-body{
-	background-color: #edeae8;
-}
+
 
 /*内容部分*/
 section{
@@ -15,7 +13,7 @@ section{
 .main-container input {
 	height: 60px;
 	padding-left: 70px;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 20px;
 	color: #b3b3b3;
 	border-radius: 4px;
