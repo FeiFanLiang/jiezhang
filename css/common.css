@@ -55,6 +55,7 @@ a {
 body{
 	background-color: #edeae8;
 }
+* { touch-action: none; } 
 /* 头部固定导航 */
 .nav-fixed {
 	position: fixed;

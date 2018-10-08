@@ -27,9 +27,7 @@
 		</header>
 		<section class="main-container">
 			<div class="order-input-container">
-				<div class="order-list-container order-num user-id">
-					101
-				</div>
+				<div class="order-list-container order-num user-id">101</div>
 				
 				<div class="toggle-container">
 					<div class="toggle-btn" id="toggle_btn">
@@ -140,7 +138,6 @@
 		</section>
 		<footer class="nav-fixed-bottom cart-nav">
 			<div class="bottom-left pay-for">
-				
 				代结账
 			</div>
 			<div class="bottom-right">
@@ -165,28 +162,71 @@
 				</div>
 			</div>
 		</div>
-		
+		<div class="layer-content">
+        <div class="form_edit clearfix">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+            <div class="num">7</div>
+            <div class="num">8</div>
+            <div class="num">9</div>
+            <div class="del-key">
+                <i class="del-icon icon"></i>
+            </div>
+            <div class="num">0</div>
+            <div class="submit-key" id="submit_key">确认</div>
+        </div>
+    </div>
 	</body>
 	<script type="text/javascript">
 		$(function(){
 			FastClick.attach(document.body);
+				function layerHide(){
+        	$('.layer-content').hide()
+            $('.user-id').removeClass('inputAnimate')
+            if ($('.user-id').text() == '') {
+                $('.user-id').text('手牌号')
+            }
+      };
+			$('.user-id').on('click', function () {
+            $('.layer-content').show();
+            $(this).addClass('inputAnimate')
+            if (isNaN(Number($(this).text()))) {
+                $(this).text('')
+            }
+        })
+
+        $('.form_edit .num').click(function () {
+            var Newvalue = $('.user-id').text() + $(this).text()
+            $('.user-id').text(Newvalue)
+        })
+        $('.del-key').click(function () {
+            var value = $('.user-id').text()
+            $('.user-id').text(value.substring(0, value.length - 1))
+        });
+			$('#submit_key').on('click', function () {
+            layerHide()
+        });
 			$('#toggle_btn').on('click',function(){
 				$(this).toggleClass('btn-active')
-				
 				$(this).find('.toggle-circle').toggleClass('active')
-			})
+			});
 			$('.bottom-left').on('click',function (){
+				layerHide();
 				$('.edit-dialog').show()
 				$('body').on('touchmove',function(event){event.preventDefault();});
-			})
+			});
 			$('.edit-cancel').on('click',function (){
 				$('.edit-dialog').hide()
 				$('body').unbind('touchmove')
-			})
+			});
 			$('.edit-submit').on('click',function (){
-				$('.edit-dialog').hide()
-				$('body').unbind('touchmove')
-			})
+				$('.edit-dialog').hide();
+				$('body').unbind('touchmove');
+			});
 			$('.nav-left').on('click',function (){
 				window.history.back()
 			})
