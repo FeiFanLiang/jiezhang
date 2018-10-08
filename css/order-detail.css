@@ -279,12 +279,8 @@ body{
     z-index: 1000;
     display: none;
 }
-/* .num.click {
-	animation: clickShodow 0.3s infinite;
-} */
-.click {
-	box-shadow: 1px 1px 1px #ccc;
-}
+
+
 .form_edit {
     width: 100%;
     background: #ececec;
